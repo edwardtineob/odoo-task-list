@@ -4,5 +4,5 @@
     'author': 'Edward Tineo',
     'depends': ['base'],
     'application': True,
-    'data': ['views / todo_menu.xml']
+    'data': ['views/todo_menu.xml']
 }
