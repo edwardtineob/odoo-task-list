@@ -8,3 +8,4 @@ class TodoTask(models.Model):
     name = fields.Char('Description', required=True)
     is_done = fields.Boolean('Done?')
     active = fields.Boolean('Active?', default=True)
+    items = fields.Many2many('todo.item', 'items_relation', 'id_task', 'id_item', 'Items')

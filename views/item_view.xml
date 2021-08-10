@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_form_todo_item" model="ir.ui.view"> 
+        <field name="name">To-do Item Form</field> 
+        <field name="model">todo.item</field> 
+        <field name="arch" type="xml">
+            <form string="To-do Item"> 
+                <sheet>
+                    <group>
+                        <field name="name"/> 
+                        <field name="active" readonly="1"/>
+                    </group>
+                </sheet> 
+            </form>
+        </field> 
+    </record>
+
+    <record id="view_tree_todo_item" model="ir.ui.view"> 
+        <field name="name">To-do Item Tree</field> 
+        <field name="model">todo.item</field> 
+        <field name="arch" type="xml"> 
+            <tree colors="decoration-muted:active==True"> 
+                <field name="name"/> 
+                <field name="active"/> 
+            </tree> 
+        </field> 
+    </record>
+
+    <record id="view_filter_todo_item" model="ir.ui.view">
+        <field name="name">To-do Item Filter</field> 
+        <field name="model">todo.item</field> 
+        <field name="arch" type="xml"> 
+            <search> 
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+</odoo>
