@@ -35,4 +35,15 @@
             </search>
         </field>
     </record>
+
+    <!-- Action de Item -->
+    <record model="ir.actions.act_window" id="item_action">
+        <field name="name">Items</field>
+        <field name="res_model">todo.item</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Registra tu primer Item</p>
+        </field>
+    </record>
 </odoo>
