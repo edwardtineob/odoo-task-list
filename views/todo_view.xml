@@ -40,4 +40,15 @@
             </search>
         </field>
     </record>
+
+    <!-- Action de Item -->
+    <record model="ir.actions.act_window" id="task_action">
+        <field name="name">Tasks</field>
+        <field name="res_model">todo.task</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_smiling_face">Registra tu primer Task</p>
+        </field>
+    </record>
 </odoo>
